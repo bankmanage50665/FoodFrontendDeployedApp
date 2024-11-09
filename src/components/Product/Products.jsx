@@ -28,8 +28,6 @@ export default function Products() {
     addToCart(product);
   }
 
-  
-
   const containerVariants = {
     hidden: { opacity: 0 },
     visible: {
@@ -159,6 +157,8 @@ export async function loader() {
       throw new Error(resData.message);
     }
     const products = resData.allProduct;
+
+    console.log(resData);
 
     const creatorId =
       products && products.length > 0 ? products[0].creator : null;

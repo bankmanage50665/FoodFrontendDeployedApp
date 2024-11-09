@@ -25,8 +25,7 @@ export default function ProductDetail() {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
   const [isWishListed, setIsWishListed] = useState(false);
 
-
-  console.log(findProduct)
+  console.log(findProduct);
 
   useEffect(() => {
     trackPageView();
@@ -161,24 +160,21 @@ export default function ProductDetail() {
                   </span>
                 </div>
 
-                <p className="text-gray-600 text-lg mb-4">
+                {/* <p className="text-gray-600 text-lg mb-4">
                   Brand: {findProduct.brand}
-                </p>
-                <p className="text-gray-800 text-xl mb-6">
+                </p> */}
+                <p className="text-gray-800 text-xl mb-6 flex-wrap">
                   {findProduct.description}
                 </p>
-                <p className="text-gray-600 text-lg mb-6">
+                {/* <p className="text-gray-600 text-lg mb-6">
                   Category: {findProduct.category}
-                </p>
+                </p> */}
 
                 <div className="flex items-center mb-8">
                   <GrDeliver className="text-3xl text-gold-500 mr-3" />
                   <p className="text-gray-800 text-lg">Free Delivery</p>
                 </div>
-                <div className="flex items-center mb-8">
-                  <TbTruckReturn className="text-3xl text-gold-500 mr-3" />
-                  <p className="text-gray-800 text-lg">10 days return </p>
-                </div>
+
                 <div className="flex items-center mb-8">
                   <BsCash className="text-3xl text-gold-500 mr-3" />
                   <p className="text-gray-800 text-lg">Cash on delivery </p>

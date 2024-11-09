@@ -1,5 +1,7 @@
 {
   "projects": {
-    "default": "ecommerce50665"
-  }
+    "default": "foodfrontend-503fc"
+  },
+  "targets": {},
+  "etags": {}
 }

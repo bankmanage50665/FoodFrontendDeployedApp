@@ -34,6 +34,9 @@ const LoginWithOtp = () => {
     const formData = new FormData(e.target);
     const userData = Object.fromEntries(formData.entries());
 
+   
+    
+
     try {
       const res = await fetch(
         `${process.env.REACT_APP_BACKEND_URL}/users/sendotp`,
@@ -46,8 +49,6 @@ const LoginWithOtp = () => {
         }
       );
       const resData = await res.json();
-
-      console.log(resData)
 
       if (!res.ok) {
         throw new Error(resData.message || "Failed to send OTP.");
