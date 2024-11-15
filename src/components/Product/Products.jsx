@@ -13,6 +13,7 @@ import { FaShoppingCart, FaEdit, FaEye } from "react-icons/fa";
 
 import { userId } from "../../middleware/getToken";
 import { trackPageView } from "../../utils/FacebookPixel";
+import ImageCarousel from "../../shared/component/ImageCarousel";
 
 export default function Products() {
   const { addToCart } = useContext(CartContaxt);
@@ -52,6 +53,9 @@ export default function Products() {
 
   return (
     <>
+      <div>
+        <ImageCarousel />
+      </div>
       <motion.div
         className="  min-h-screen py-12 px-4 sm:px-6 lg:px-8"
         initial="hidden"

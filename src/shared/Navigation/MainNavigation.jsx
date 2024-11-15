@@ -39,7 +39,7 @@ export default function MainNavigation() {
           <ul className="flex flex-wrap justify-between items-center">
             <motion.li {...navItemMotion}>
               <Link to="/" className="block">
-                <h1 className="h-10 w-10 font-bold">Trendify </h1>
+                <h1 className="h-10 w-10 font-bold">Lunet </h1>
               </Link>
             </motion.li>
 
